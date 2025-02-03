@@ -3,13 +3,13 @@ from google.oauth2.service_account import Credentials
 import requests
 
 # Конфигурация Google Sheets
-SPREADSHEET_ID = '1cdhZJvPLOJ1j9WxAE1c3oSUAHZpjE84zFV0l52xiR_k'  # ID таблицы
+SPREADSHEET_ID = ''  # ID таблицы
 RANGE_NAME = 'GEO VOIP Numbers!A2:G8900'  # Расширен диапазон до G-столбца
 SERVICE_ACCOUNT_FILE = 'apiprometheus-b2585815780f.json'  # JSON-файл с ключами Google API
 
 # Конфигурация Telegram
-TELEGRAM_BOT_TOKEN = '7715113550:AAGmXQXalU0YRit1DVKZMnfm_04r6nWuUeE'  # Токен Telegram-бота
-CHAT_ID = '770491204'  # chat_id для отправки уведомлений
+TELEGRAM_BOT_TOKEN = 'E'  # Токен Telegram-бота
+CHAT_ID = ''  # chat_id для отправки уведомлений
 
 # Пороговые значения для каждой страны
 COUNTRIES_THRESHOLDS = {
