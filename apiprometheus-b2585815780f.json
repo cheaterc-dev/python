@@ -1,0 +1,17 @@
+{
+  "type": "service_account",
+  "project_id": "apiprometheus",
+  "private_key_id": "b2585815780f5622bce00c714eb53145b192582e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEonyCCXOrvq+Q\nHk9rQ+Z1/pkOkRWymd+nTayUD1mxuNZTtRb7b+8QbmDVmzgBxQHmWI1dI9cn61j5\nCvSA943afS4T1NrWvnv45VguEnAUkQMtKlO0XpYY/d4ra9zHMKLrPL2D7QCdaDA0\noBv1cDT1AOGuKL1H7+M3H0vbywahF9RLPakp/X1Orupekh5Lcyw/4DThcH5KekA2\n0igQh+jWwjkCExDl4BlAK0DgZNubYeCgDaArhm554EOPet4syf0/S1LNsWzQ15Yl\neGIgM77D2wqks9xT7RtiwI13r6S/aLRSoJmxqvhzJkHUWmfTA8ETObE6UDpHMPVp\nUQJtONT/AgMBAAECggEAXElgg015Vu1fi5XWM2NCWjW8Uxxf4Rub3vMzIKhVsfYs\nzUusNiUSQBV16Dr53ca/PgNokYK9O9SWxQfRume1UYq34gHgFbKAD9BgAvuPU++9\nXGjFsV1FOASKTbnJfElE5X/z+GN3Cul32nMcvCRGDokz4l/nekhJzTioi0ct3NO2\nIBdR0kC8uxYRpf2MZIjQF8I0jBBItGPnIZ9Exl+SKZDjcMkHFoh5iM49Ef1v6vhQ\nQXojK/kwBG59CcjYMTk6uhacw/pE35mljDF9QHIcRPtjAjZfoHLtNlzro/wgcekW\nJmQKru2zsDOswZiO4fXcESOA9TeH4G8zZhpPxLjm2QKBgQDk0e25/jaK939DMwL0\nYBQC4LPfcSxoEaQEjiH+z2yuF7zDQ5mnBRYCIshqxWyjdGdG+Q3IUwv17NaHzXwx\n+GEaEOc6gNfLjkzhKtZEUHQ5sl4SgfbdWtGsNYwbWIOO9dgCQoPmA4hexf5EyO2V\n6wJ4Q+5ZYZJLWo2QoOGj1D5p6QKBgQDb/dnLqSYQqICoafeFfMAUrA/UVNj6Jb0y\nlBTaPEnnbboZpC/ILAHS9MnyFtZUSeIbsf2cgr7PcfjODa0KtfGhBAIJI6fW4q7A\nkNtw3ta0oxiWOnjVL20X1WjdB72y89yofvaYSA5DJvztFU0/SBMDEFdjxpPJDBCc\nw7GCL58OpwKBgQDjzO9L1H6+eMl0wCs32RLzDntkfspDzRQqCMplYGGFLFKbXwhw\nU8rmU3SNf4C5deB/suD6x1rH+YJWbscvBGS/S4a4Ip8zorZ9EGWCW0pqSl4HNOXs\n10aYmDKk4skOoUfscAXaDzhLifeqyRJmxzGNQ6vdxhqb9Emta81XiaydSQKBgAF7\n0s4209Tk7gk0vcCeuMTq7ChochYtzvraWNGn+m+fI9QscU4OTezYTcxeLw/ed7Hs\nH2PA1fycLitlmDcsRvbpCgJ5xRYD7V3LHE/EkPoi53WL62i0qy2v+McU2EiusFxK\njus0ATSevLH0pNK6b7Zjk9NOcYy3kh0cjMPuAkqdAoGBALr1nnsNgknI7bMMG6Uc\nXazQcePNySlTlNzt85vfZP/X1W51I1xytGAmDuXXwT9UvAIJSpDUl7eWuAItLJlh\nBtZvmx2aYtjuc9hzZruD3pdFVWK73bU4DsKZT+Km9uJkgHD75CnnU4X07bl9fWFt\n02tZl4wtnBnNqJWKQSbzJaew\n-----END PRIVATE KEY-----\n",
+  "client_email": "prometheus@apiprometheus.iam.gserviceaccount.com",
+  "client_id": "116345649006219827140",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prometheus%40apiprometheus.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+
+
+
