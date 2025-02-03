@@ -3,13 +3,13 @@ from google.oauth2.service_account import Credentials
 import requests
 
 # Параметры Google Sheets
-SPREADSHEET_ID = '1cdhZJvPLOJ1j9WxAE1c3oSUAHZpjE84zFV0l52xiR_k'  # ID таблицы
+SPREADSHEET_ID = ''  # ID таблицы
 RANGE_NAME = 'UA GSM Numbers!A2:M9000'  # Диапазон, включая столбец оператора
-SERVICE_ACCOUNT_FILE = 'apiprometheus-b2585815780f.json'  # Файл ключа API
+SERVICE_ACCOUNT_FILE = ''  # Файл ключа API
 
 # Параметры Telegram
-TELEGRAM_BOT_TOKEN = '7715113550:AAGmXQXalU0YRit1DVKZMnfm_04r6nWuUeE'  # Токен бота
-CHAT_ID = '770491204'  # ID чата для отправки уведомлений
+TELEGRAM_BOT_TOKEN = ''  # Токен бота
+CHAT_ID = ''  # ID чата для отправки уведомлений
 
 
 def get_data():
