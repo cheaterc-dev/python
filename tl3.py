@@ -6,7 +6,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.filters import Command
 from data import get_data, count_free_numbers  # Импортируем функции из data.py
 
-TOKEN = "7715113550:AAGmXQXalU0YRit1DVKZMnfm_04r6nWuUeE"
+TOKEN = ""
 
 # Создаём бота и диспетчер
 bot = Bot(token=TOKEN)
