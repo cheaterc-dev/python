@@ -2,14 +2,13 @@ from googleapiclient.discovery import build
 from google.oauth2.service_account import Credentials
 import requests
 
-# Конфигурация Google Sheets
-SPREADSHEET_ID = ''  # ID таблицы
-RANGE_NAME = 'GEO VOIP Numbers!A2:G8900'  # Расширен диапазон до G-столбца
-SERVICE_ACCOUNT_FILE = 'apiprometheus-b2585815780f.json'  # JSON-файл с ключами Google API
+SPREADSHEET_ID = ''  # Spreadsheet ID
+RANGE_NAME = 'GEO VOIP Numbers!A2:K8900'  # Extended range to include the G column
+SERVICE_ACCOUNT_FILE = ''  # Path to the service account JSON file
 
-# Конфигурация Telegram
-TELEGRAM_BOT_TOKEN = 'E'  # Токен Telegram-бота
+TELEGRAM_BOT_TOKEN = ''  # Токен Telegram-бота
 CHAT_ID = ''  # chat_id для отправки уведомлений
+
 
 # Пороговые значения для каждой страны
 COUNTRIES_THRESHOLDS = {
@@ -33,21 +32,25 @@ def get_data():
     result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
     return result.get('values', [])
 
+
+
 def count_free_numbers(data):
-    """Подсчитывает свободные номера для указанных стран, учитывая фильтр 'mobile' только для Британии и Польши."""
-    country_counts = {country: 0 for country in COUNTRIES_THRESHOLDS}  # Инициализация словаря
+    """Подсчитывает свободные номера для указанных стран, фильтрация по 'MMD' только для Польши."""
+    country_counts = {country: 0 for country in COUNTRIES_THRESHOLDS}
     for row in data:
         try:
-            status = row[2].strip().lower()  # Статус (второй столбец)
-            country = row[4].strip().lower()  # Страна (пятый столбец)
-            type_column = row[6].strip().lower() if len(row) > 6 else ''  # Проверяем столбец G (седьмой индекс)
+            status = row[2].strip().lower()       # Статус (колонка C)
+            country = row[5].strip().lower()      # Страна (колонка F)
+            type_column_general = row[7].strip().lower() if len(row) > 7 else ''  # H
+            type_column_poland = row[8].strip().lower() if len(row) > 8 else ''   # I
 
             if status == 'свободный':
-                if country in ['британия', 'польша']:
-                    if 'mobile' in type_column:
+                if country == 'польша':
+                    if 'mmd' in type_column_poland:
                         country_counts[country] += 1
                 elif country in COUNTRIES_THRESHOLDS:
                     country_counts[country] += 1
+
         except IndexError:
             continue  # Пропускаем строки с недостаточными данными
     return country_counts
