@@ -1,3 +1,4 @@
+                                                                                                                                                                                                                                                                       data1.py                                                                                                                                                                                                                                                                                   
 from googleapiclient.discovery import build
 from google.oauth2.service_account import Credentials
 import requests
@@ -8,9 +9,8 @@ RANGE_NAME = 'UA GSM Numbers!A2:M9000'  # Диапазон, включая ст�
 SERVICE_ACCOUNT_FILE = ''  # Файл ключа API
 
 # Параметры Telegram
-TELEGRAM_BOT_TOKEN = ''  # Токен бота
-CHAT_ID = ''  # ID чата для отправки уведомлений
-
+TELEGRAM_BOT_TOKEN = '  # Токен Telegram-бота
+CHAT_ID = '-'  # chat_id для отправки уведомлений
 
 def get_data():
     """Загружает данные из Google Sheets."""
